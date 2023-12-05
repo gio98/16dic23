@@ -1,0 +1,138 @@
+@font-face {
+  /*font from https://codepen.io/Nimoi/pen/keaFn*/
+  font-family: 'Monoton';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Monoton'), local('Monoton-Regular'), url(https://themes.googleusercontent.com/static/fonts/monoton/v4/AKI-lyzyNHXByGHeOcds_w.woff) format('woff');
+}
+@font-face {
+  font-family: ac;
+  src: url("Maratre.otf") ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+a {text-decoration: none; }
+body {
+  background: radial-gradient(#fec215, #f8a90c);
+  background-image: url(Sfondo-Natalizio.png);
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-color: black;
+ }
+ 
+ .text {
+  position: absolute;
+  left: 0;
+  top: -42px;
+  width: 100vw;
+  font-size: 8vw;
+  text-align: center;
+  margin-top: calc(18vh - 0.5em);
+  margin-left: -316px;
+  font-family: ac;
+  color: gold;
+  z-index: -1;
+}
+.textb {
+  position: absolute;
+  left: 19px;
+  top: 17px;
+  width: 100vw;
+  font-size: 8vw;
+  text-align: center;
+  margin-top: calc(18vh - 0.5em);
+  margin-left: -316px;
+  font-family: ac;
+  color: gold;
+  z-index: -1;
+}
+.text1 {
+  position: absolute;
+  left: 0;
+  top: 108px;
+  width: 100vw;
+  font-size: 16vw;
+  text-align: center;
+  margin-top: calc(18vh - 0.5em);
+  margin-left: -316px;
+  font-family: ac;
+  color: gold;
+  z-index: -1;
+}
+.text2 {
+  position: absolute;
+  left: 0;
+  top: 246px;
+  width: 100vw;
+  font-size: 8vw;
+  text-align: center;
+  margin-top: calc(18vh - 0.5em);
+  margin-left: -316px;
+  font-family: ac;
+  color: gold;
+  z-index: 100;
+  animation: animate 1.5s linear infinite; 
+}
+@keyframes animate{ 
+  0%{ 
+    opacity: 0; 
+  } 
+  50%{ 
+    opacity: 0.7; 
+  } 
+  100%{ 
+    opacity: 0; 
+  } 
+} 
+.text3 {
+  position: absolute;
+  left: 319px;
+  top: 245px;
+  width: 100vw;
+  font-size: 8vw;
+  text-align: center;
+  margin-top: calc(18vh - 0.5em);
+  margin-left: -316px;
+  font-family: ac;
+  color: gold;
+  z-index: -1;
+}
+
+
+
+ @media (orientation: portrait) {
+  body {
+  
+ 
+    background-position: top; 
+
+   }
+   .text3 {
+    left: 102px;
+    top: 153px;
+    width: 100vw;
+}
+.text {
+  left: 163px;
+  top: -294px;
+  font-size: 118px;
+}
+.textb {
+  left: 198px;
+  top: -228px;
+  font-size: 124px;
+}
+  .text1{
+    left: 100px;
+    top:-122px;
+  }
+  .text2 {
+    left: 100px;
+    top: 29px;
+    font-size: 153px;
+}
+}
